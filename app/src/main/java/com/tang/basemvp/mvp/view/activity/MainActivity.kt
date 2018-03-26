@@ -9,6 +9,10 @@ import com.tang.basemvp.mvp.presenter.LoginPresenter
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : BaseActivity<LoginContract.View,LoginContract.Presenter>(),LoginContract.View {
+    override fun err(code: Int, message: String) {
+        ToastUtils.showShort("错误码：$code\n错误信息：$message")
+    }
+
     override fun loginSus(loginModel: LoginModel) {
         disMissLoading()
         if (loginModel.State) {

@@ -7,7 +7,7 @@ import java.io.Serializable
  * 接口命名的字段是大写开头
  */
 
-data class LoginModel(val Ext: ExtBean?,val Message: String,val State: Boolean) : Base(){
+class LoginModel : Base() {
 
     /**
      * Ext : {"Authority":3,"Token":"213bfc688a7e099b1f2a27b64f59c9e1"}
@@ -15,11 +15,16 @@ data class LoginModel(val Ext: ExtBean?,val Message: String,val State: Boolean) 
      * State : true
      */
 
+    var ext: ExtBean? = null
 
-    data class  ExtBean(val Authority: Int,val Token: String): Serializable{
+
+    class ExtBean {
         /**
          * Authority : 3
          * Token : 213bfc688a7e099b1f2a27b64f59c9e1
          */
+
+        var authority: Int = 0
+        var token: String? = null
     }
 }

@@ -97,8 +97,8 @@ class HttpManager {
     }
 
     companion object {
-        //网络请求延迟时间，默认为50秒
-        private val DEFAULT_TIMEOUT = 0x000032
+        //网络请求延迟时间，默认为20秒
+        private val DEFAULT_TIMEOUT = 0x000014
         private var client: OkHttpClient? = null
         private var retrofit: Retrofit? = null
         private var httpService: HttpService? = null
