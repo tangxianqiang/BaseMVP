@@ -8,6 +8,9 @@ import com.tang.basemvp.mvp.model.LoginModel
 import com.tang.basemvp.mvp.presenter.LoginPresenter
 import kotlinx.android.synthetic.main.activity_main.*
 
+/**
+ * 模拟登录的view层
+ */
 class MainActivity : BaseActivity<LoginContract.View,LoginContract.Presenter>(),LoginContract.View {
     override fun err(code: Int, message: String) {
         ToastUtils.showShort("错误码：$code\n错误信息：$message")

@@ -14,7 +14,7 @@ import rx.Observable;
 
 public interface HttpService {
     //网络请求基地址
-    String BASE_URL = "https://rmm.xxx.com/";
+    String BASE_URL = "https://xxx.xxx.com/debug/";
     //登录
     @FormUrlEncoded
     @POST("Signin")

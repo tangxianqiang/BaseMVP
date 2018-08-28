@@ -4,7 +4,7 @@ import com.tang.basemvp.base.BaseContract
 import com.tang.basemvp.mvp.model.LoginModel
 
 /**
- *
+ *登录的契约类
  */
 interface LoginContract {
     interface View : BaseContract.BaseView {

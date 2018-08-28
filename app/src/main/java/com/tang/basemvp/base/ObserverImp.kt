@@ -7,7 +7,8 @@ import retrofit2.adapter.rxjava.HttpException
 import rx.Observer
 
 /**
- * Created by Administrator on 2018/3/26.
+ * Created by tang on 2018/3/26.
+ *继承与观察者，封装统一的异常处理
  */
 
 abstract class ObserverImp<T> : Observer<T> {

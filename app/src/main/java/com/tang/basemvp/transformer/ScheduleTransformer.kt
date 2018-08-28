@@ -5,26 +5,16 @@ import rx.android.schedulers.AndroidSchedulers
 import rx.schedulers.Schedulers
 
 /**
- * Created by Administrator on 2018/3/26.
- * override fun call(t: Observable<T>?): Observable<T> {
-return t!!.subscribeOn(Schedulers.io())
-.unsubscribeOn(Schedulers.io())
-.observeOn(AndroidSchedulers.mainThread())
-}
-class TransformerHolder (){
-companion object {
-var instance : ScheduleTransformer<Any>? = null;
-
-}
-}
+ * 单例实现的转换器，统一指定每一个接口请求实在io线程，回调在ui线程
  */
+
 class ScheduleTransformer<T>
 /**
  * 私有的构造函数
  */
 private constructor() : Observable.Transformer<T, T> {
     /**
-     *内部单例
+     *懒加载内部单例
      */
     private object TransformerHolder {
         private val instance: ScheduleTransformer<Any>? = null
@@ -39,6 +29,9 @@ private constructor() : Observable.Transformer<T, T> {
                 .observeOn(AndroidSchedulers.mainThread())
     }
 
+    /**
+     * 伴生
+     */
     companion object {
         val instance: ScheduleTransformer<Any>
             get() = TransformerHolder.getInstance()

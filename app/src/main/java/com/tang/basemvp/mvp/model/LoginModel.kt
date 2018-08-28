@@ -1,10 +1,9 @@
 package com.tang.basemvp.mvp.model
 
 import com.tang.basemvp.base.Base
-import java.io.Serializable
 
 /**
- * 接口命名的字段是大写开头
+ * 后台规定的接口命名的字段是大写开头
  */
 
 class LoginModel : Base() {

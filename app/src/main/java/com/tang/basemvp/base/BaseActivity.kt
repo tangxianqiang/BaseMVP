@@ -5,7 +5,7 @@ import android.support.v7.app.AppCompatActivity
 import com.tang.basemvp.mvp.view.dialog.LoadingDialog
 
 /**
- * 所有包含业务的Activity基类
+ * 所有Activity的基类
  */
 abstract class  BaseActivity< in V : BaseContract.BaseView, P : BaseContract.BasePresenter<V>>:AppCompatActivity(){
     //网络逻辑处理实例

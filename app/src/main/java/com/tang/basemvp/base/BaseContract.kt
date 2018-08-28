@@ -14,6 +14,7 @@ interface BaseContract {
     }
 
     interface BaseView {
+        //view的一些共有方法
         fun showError(e: Throwable)
         fun complete()
     }

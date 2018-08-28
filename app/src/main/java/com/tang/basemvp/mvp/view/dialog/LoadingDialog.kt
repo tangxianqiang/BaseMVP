@@ -10,8 +10,9 @@ import com.tang.basemvp.R
 import com.tang.basemvp.base.BaseDialog
 
 /**
- *
+ * 加载中的提示框
  */
+
 class LoadingDialog:BaseDialog(){
     override fun getLayoutId(): Int = R.layout.dialog_loading
 

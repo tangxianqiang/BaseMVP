@@ -8,7 +8,7 @@ import android.view.ViewGroup
 import com.tang.basemvp.mvp.view.dialog.LoadingDialog
 
 /**
- *
+ *所有碎片的基类
  */
 abstract class BaseFragment<in V : BaseContract.BaseView, P : BaseContract.BasePresenter<V>>:Fragment(){
     //网络逻辑处理实例

@@ -8,7 +8,7 @@ import android.util.Base64
 import java.io.*
 
 /**
- * Created by lfh on 2016/8/13.
+ * Created by tang on 2016/8/13.
  */
 class SharedPreferencesUtil private constructor() {
     lateinit var context: Context

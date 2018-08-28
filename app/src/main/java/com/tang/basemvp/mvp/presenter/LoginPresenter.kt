@@ -6,12 +6,9 @@ import com.tang.basemvp.http.HttpManager
 import com.tang.basemvp.mvp.contract.LoginContract
 import com.tang.basemvp.mvp.model.LoginModel
 import com.tang.basemvp.transformer.ScheduleTransformer
-import rx.Observer
-import rx.android.schedulers.AndroidSchedulers
-import rx.schedulers.Schedulers
 
 /**
- *
+ *对应的登录的presenter
  */
 
 class LoginPresenter : RxPresenter<LoginContract.View>(), LoginContract.Presenter {

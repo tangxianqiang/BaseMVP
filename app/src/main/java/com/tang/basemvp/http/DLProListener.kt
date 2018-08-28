@@ -1,7 +1,7 @@
 package com.tang.basemvp.http
 
 /**
- * Created by Administrator on 2017/11/29.
+ * Created by tang on 2017/11/29.
  */
 
 interface DLProListener {

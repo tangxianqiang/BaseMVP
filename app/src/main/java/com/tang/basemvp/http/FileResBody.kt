@@ -11,7 +11,7 @@ import okio.Okio
 import okio.Source
 
 /**
- *
+ *自定义ResponseBody，能实现文件进度监听回调
  */
 
 class FileResBody(private val responseBody: ResponseBody, private val listener: DLProListener?) : ResponseBody() {

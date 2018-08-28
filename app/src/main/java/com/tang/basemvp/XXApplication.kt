@@ -10,7 +10,7 @@ import com.tang.basemvp.utils.SharedPreferencesUtil
 import java.util.concurrent.CopyOnWriteArrayList
 
 /**
- * Created by Administrator on 2017/8/15.
+ * Created by tang on 2017/8/15.
  */
 
 class XXApplication : Application() {

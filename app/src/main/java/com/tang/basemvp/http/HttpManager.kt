@@ -3,22 +3,14 @@ package com.tang.basemvp.http
 import com.blankj.utilcode.util.NetworkUtils
 import com.tang.basemvp.BuildConfig
 import com.tang.basemvp.XXApplication
-
-import java.io.File
-import java.io.IOException
-import java.util.concurrent.TimeUnit
-
-import okhttp3.Cache
-import okhttp3.CacheControl
-import okhttp3.HttpUrl
-import okhttp3.Interceptor
-import okhttp3.OkHttpClient
-import okhttp3.Request
-import okhttp3.Response
+import okhttp3.*
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.adapter.rxjava.RxJavaCallAdapterFactory
 import retrofit2.converter.gson.GsonConverterFactory
+import java.io.File
+import java.io.IOException
+import java.util.concurrent.TimeUnit
 
 /**
  * 网络请求设置
